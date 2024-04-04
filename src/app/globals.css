@@ -76,16 +76,25 @@
 }
 
 .background-pattern {
-  background-color: #faf9f6;
+  background-color: #ffffff;
   opacity: 1;
   background-image: linear-gradient(
-      #ececec 0.6000000000000001px,
+      #f1f1f1 0.6000000000000001px,
       transparent 0.6000000000000001px
     ),
     linear-gradient(
       to right,
-      #ececec 0.6000000000000001px,
-      #faf9f6 0.6000000000000001px
+      #f1f1f1 0.6000000000000001px,
+      #ffffff 0.6000000000000001px
     );
   background-size: 12px 12px;
+}
+
+audio {
+  transform: scale(0.6, 0.6);
+  width: 250px;
+}
+
+audio::-webkit-media-controls-panel {
+  background-color: #cecece;
 }
