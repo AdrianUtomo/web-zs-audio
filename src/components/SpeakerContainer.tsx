@@ -1,13 +1,45 @@
 import React from "react";
+import Image from "next/image";
 import ModelContainer from "./ModelContainer";
 
-export default function SpeakerContainer() {
+export default function SpeakerContainer({ data, speakerNumber }) {
   return (
-    <div className="flex flex-col items-center">
-      <p>Speaker 1. Text: but that heritage is shrinking even faster</p>
-      <div className="flex">
-        <ModelContainer />
+    <div className="flex flex-col gap-2 items-center">
+      <p className="font-bold w-full">
+        {`Speaker ${speakerNumber}. Text: ${data.text}`}
+      </p>
+      <div className="flex justify-between gap-5">
+        <ModelContainer
+          text={data["gt_text"]}
+          cos={data["gt_cos"]}
+          cer={data["gt_cer"]}
+          mos={data["gt_mos"]}
+          audio={data["gt_audio"]}
+          voiceType={`Dysphonia Speaker's Voice`}
+        />
+        <ModelContainer
+          text={data["m14_text"]}
+          cos={data["m14_cos"]}
+          cer={data["m14_cer"]}
+          mos={data["m14_mos"]}
+          audio={data["m14_audio"]}
+          voiceType={`Baseline Model: A0S0P0L0`}
+        />
+        <ModelContainer
+          text={data["m8_text"]}
+          cos={data["m8_cos"]}
+          cer={data["m8_cer"]}
+          mos={data["m8_mos"]}
+          audio={data["m8_audio"]}
+          voiceType={`Best Model: A2S1P0L1`}
+        />
       </div>
+      <Image
+        src={`/picture/${data.melpict}`}
+        width={800}
+        height={800}
+        alt="model"
+      ></Image>
     </div>
   );
 }

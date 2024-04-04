@@ -1,18 +1,17 @@
 import React from "react";
 import Image from "next/image";
 
-export default function ModelContainer() {
+export default function ModelContainer({text, cos, cer, mos, audio, voiceType}) {
   return (
-    <div>
-      <p>{`Dysphonia Speaker's Voice`}</p>
-      <audio className="" controls src="/audio/FD07_T2_si481_NA-1860-gt.wav"></audio>
-      <p>{`ASR: but that air of tiches is shrinking faster`}</p>
+    <div className="flex flex-col text-xs">
+      <p>{voiceType}</p>
+      <audio className="h-[35px]" controls src={`/audio/${audio}`}></audio>
+      <p>{`ASR: ${text}`}</p>
       <div className="flex gap-2">
-        <p>{`COS: 0.653`}</p>
-        <p>{`CER: 35.71`}</p>
-        <p>{`MOS: 3.008`}</p>
+        <p>{`COS: ${cos}`}</p>
+        <p>{`CER: ${cer}`}</p>
+        <p>{`MOS: ${mos}`}</p>
       </div>
-      <Image src={`/picture/mel_FD07_1860.png`} width={10} height={10} alt="model"></Image>
     </div>
   )
 }
