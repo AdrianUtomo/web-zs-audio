@@ -1,6 +1,7 @@
 [
     {
         "fid": "1950",
+        "no": "1",
         "speaker": "FD08",
         "text": "but that heritage is shrinking even faster",
         "melpict": "mel_FD08_1950.png",
@@ -22,6 +23,7 @@
     },
     {
         "fid": "1033",
+        "no": "2",
         "speaker": "FD032",
         "text": "don't look for group valuables in a bank vault",
         "melpict": "mel_FD032_1033.png",
@@ -43,6 +45,7 @@
     },
     {
         "fid": "1177",
+        "no": "3",
         "speaker": "FD034",
         "text": "never happier in my life",
         "melpict": "mel_FD034_1177.png",
@@ -64,6 +67,7 @@
     },
     {
         "fid": "1290",
+        "no": "4",
         "speaker": "FD035",
         "text": "suburban housewives often suffer from the gab habit",
         "melpict": "mel_FD035_1290.png",
@@ -85,6 +89,7 @@
     },
     {
         "fid": "1860",
+        "no": "5",
         "speaker": "FD07",
         "text": "this he added brought about petty jealousies and petty...",
         "melpict": "mel_FD07_1860.png",
@@ -106,6 +111,7 @@
     },
     {
         "fid": "475",
+        "no": "6",
         "speaker": "FD021",
         "text": "he has never himself done anything for which to be hated...",
         "melpict": "mel_FD021_475.png",
@@ -127,6 +133,7 @@
     },
     {
         "fid": "118",
+        "no": "7",
         "speaker": "FD013",
         "text": "like as if it were built of books",
         "melpict": "mel_FD013_118.png",
@@ -148,6 +155,7 @@
     },
     {
         "fid": "833",
+        "no": "8",
         "speaker": "FD029",
         "text": "but that heritage is shrinking even faster",
         "melpict": "mel_FD029_833.png",
@@ -169,6 +177,7 @@
     },
     {
         "fid": "2220",
+        "no": "9",
         "speaker": "MD05",
         "text": "this excellent foreign bomb takes only six",
         "melpict": "mel_MD05_2220.png",
@@ -190,6 +199,7 @@
     },
     {
         "fid": "2363",
+        "no": "10",
         "speaker": "MD07",
         "text": "internal national responsibility now a truism need not...",
         "melpict": "mel_MD07_2363.png",
@@ -211,6 +221,7 @@
     },
     {
         "fid": "2405",
+        "no": "11",
         "speaker": "MD07",
         "text": "most precincts had a third of the votes counted",
         "melpict": "mel_MD07_2405.png",
@@ -232,6 +243,7 @@
     },
     {
         "fid": "2452",
+        "no": "12",
         "speaker": "MD09",
         "text": "he gazed away from us as we approached",
         "melpict": "mel_MD09_2452.png",
