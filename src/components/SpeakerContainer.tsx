@@ -4,7 +4,7 @@ import ModelContainer from "./ModelContainer";
 
 export default function SpeakerContainer({ data }) {
   return (
-    <div className="flex flex-col gap-2 items-center justify-center">
+    <div className="flex flex-col gap-1 items-center justify-center">
       <p className="font-bold w-full">
         {`Speaker ${data.no}. Text: ${data.text}`}
       </p>
@@ -37,8 +37,8 @@ export default function SpeakerContainer({ data }) {
       <Image
         className="self-center"
         src={`/picture/${data.melpict}`}
-        width={650}
-        height={650}
+        width={500}
+        height={500}
         alt="model"
       ></Image>
     </div>
