@@ -7,13 +7,13 @@ import PaginationSection from "@/components/PaginationSection";
 
 export default function Home() {
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage, setItemsPerPage] = useState(2);
+  const [itemsPerPage, setItemsPerPage] = useState(4);
 
   const lastItemIndex = currentPage * itemsPerPage;
   const firstItemIndex = lastItemIndex - itemsPerPage;
   const currentSpeakers = data.slice(firstItemIndex, lastItemIndex);
   return (
-    <main className="background-pattern min-h-screen min-w-screen flex flex-col items-center justify-around">
+    <main className="background-pattern min-h-screen min-w-screen flex flex-col items-center justify-around px-10 gap-2">
       <Header></Header>
       <Content currentSpeakers={currentSpeakers}></Content>
       <PaginationSection

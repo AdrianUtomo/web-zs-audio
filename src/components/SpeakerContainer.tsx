@@ -2,13 +2,13 @@ import React from "react";
 import Image from "next/image";
 import ModelContainer from "./ModelContainer";
 
-export default function SpeakerContainer({ data, speakerNumber }) {
+export default function SpeakerContainer({ data }) {
   return (
-    <div className="flex flex-col gap-2 items-center">
+    <div className="flex flex-col gap-2 items-start">
       <p className="font-bold w-full">
-        {`Speaker ${speakerNumber}. Text: ${data.text}`}
+        {`Speaker ${data.no}. Text: ${data.text}`}
       </p>
-      <div className="flex justify-between gap-5">
+      <div className="flex justify-between gap-2">
         <ModelContainer
           text={data["gt_text"]}
           cos={data["gt_cos"]}
@@ -35,6 +35,7 @@ export default function SpeakerContainer({ data, speakerNumber }) {
         />
       </div>
       <Image
+        className="self-center"
         src={`/picture/${data.melpict}`}
         width={800}
         height={800}
