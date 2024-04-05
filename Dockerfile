@@ -8,7 +8,7 @@ RUN npm run build
 
 
 # Production Stage
-FROM node:16-alpine AS PRODUCTION_STAGE
+FROM node:20-alpine3.18 AS PRODUCTION_STAGE
 WORKDIR /app
 COPY --from=BUILD_IMAGE /app/package*.json ./
 COPY --from=BUILD_IMAGE /app/.next ./.next
